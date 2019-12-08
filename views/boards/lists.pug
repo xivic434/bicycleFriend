@@ -1,0 +1,35 @@
+extends ../layout/index
+
+block content
+    div#bf-contents
+        h2.hide 메인 리스트
+        section.conts-info
+            div.conts-info__title
+                h2.conts-title__title= title
+                p.conts-title__info Welcome to #{title}
+            table.conts-info__lists
+                caption
+                colgroup
+                    each val in ["20%","20%","20%","20%","20%"]
+                        col(style="width:"+ val)
+                thead
+                    tr
+                        each val in ["번호","제목","글쓴이","작성일","조회"]
+                            th= val
+                tbody
+                    each val in [{num:1,title:"1",author:"관리자",day:"20190923",view:"1"},{num:3,title:"3",author:"관리자",day:"20190924",view:"1"},{num:3,title:"3",author:"관리자",day:"20190925",view:"3"}]
+                        tr
+                            td= val.num
+                            td= val.title
+                            td= val.author
+                            td= val.day
+                            td= val.view
+            div.conts-paging
+                p
+                    a(href="#" title="이전으로 가기")
+                ul
+                    each val in [{href:"/board/lists/1",name:"1"},{href:"/board/lists/2",name:"2"},{href:"/board/lists/3",name:"3"}]
+                        li
+                            a(href= val.href)= val.name
+                p
+                    a(href="#" title="다음으로 가기")
