@@ -89,8 +89,8 @@ node_modules/
 #auth
 src/resources/auth/auth.js
 
-#db
-modules/db/
+#db config
+modules/db/config/config.js
 
 # vscode setting 
 .vscode
