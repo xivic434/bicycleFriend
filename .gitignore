@@ -90,7 +90,8 @@ node_modules/
 src/resources/auth/auth.js
 
 #db config
-modules/db/config/config.js
+modules/db/config/
+!modules/db/config/config.sample.js
 
 # vscode setting 
 .vscode
