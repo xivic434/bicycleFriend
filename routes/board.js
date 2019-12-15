@@ -5,8 +5,6 @@ var oDb = require('../modules/db/manager');
 /* GET users listing. */
 /*일반 게시판 보기 일반게시판 추후에 사용*/
 router.get('/lists/:id', function(req, res, next) {
-    
-    oDb.board(console.log);
     res.render('boards/lists', {
         title: '게시판'
     });
