@@ -9,4 +9,4 @@
 - mariaDB
 
 ## 어디로 가면 볼 수 있나요?
-- [Homepage](http://ec2-13-125-97-195.ap-northeast-2.compute.amazonaws.com/)
+- [Homepage](http://bf.xivic.club/)
