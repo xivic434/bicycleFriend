@@ -4,7 +4,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var path = require('path');
 
 module.exports = {
-    entry: ['@babel/polyfill', './public/javascript/js/index.js','./public/stylesheets/scss/main.scss'],
+    entry: ['@babel/polyfill', './public/javascripts/index.js','./public/stylesheets/common.css'],
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, './public')

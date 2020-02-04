@@ -6,15 +6,6 @@ module.exports = (function(){
     return {
         init : function(){
             return mysql.createConnection(config);
-            /*
-            return mysql.createConnection({
-                host : config.host,
-                port : config.port,
-                user : config.user,
-                password : config.password,
-                database : config.database,
-            });
-            */
         },
         connect_test : function(con){
             con.connect(function(err){
