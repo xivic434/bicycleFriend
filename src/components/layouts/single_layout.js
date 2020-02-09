@@ -4,7 +4,7 @@ export default class SingleLayout extends Component{
     render(){
         return (
            <>
-                <Contents></Contents>
+                <div id="contents-wrap"></div>
            </>
         )
     }
