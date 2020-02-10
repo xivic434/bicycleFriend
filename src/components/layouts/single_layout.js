@@ -1,11 +1,12 @@
 import React, {Component} from "react";
 
-export default class SingleLayout extends Component{ 
-    render(){
-        return (
-           <>
-                <div id="contents-wrap"></div>
-           </>
-        )
-    }
+
+
+const SingleLayout = (Contents)=>{ 
+    return (
+        <>
+            <Contents/>
+        </>
+    )
 }
+export default SingleLayout;
