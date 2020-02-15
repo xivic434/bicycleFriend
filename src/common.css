@@ -1,0 +1,24 @@
+html {
+  background: url(./assets/images/intro.jpg) no-repeat 50% 50% fixed; 
+
+}
+.intro-bg{ 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image:url("./assets/images/intro.jpg") ;
+    min-height:1024PX;
+  }
+.fixed-login-box {
+    position: absolute;
+    right:30%;
+    top: 30%;
+    background:#eee;
+    padding : 10px;
+  }
+  
+.btn-snslogin {
+    width:60px;
+    height:60px;
+    margin:2px;
+    display:inline-block;
+}

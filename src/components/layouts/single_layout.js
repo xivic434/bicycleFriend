@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 
-
-
 const SingleLayout = (Contents)=>{ 
     return (
         <>
-            <Contents/>
+            <div className="single-layout" >
+                <Contents/>
+            </div>
         </>
     )
 }

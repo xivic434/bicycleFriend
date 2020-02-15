@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Index from './pages/intro/index';
+import MainRoute from './pages/main/_route';
 
 function App() {
   return (
     <div className="App">
-        <Index></Index>
+        <MainRoute></MainRoute>
     </div>
   );
 }
