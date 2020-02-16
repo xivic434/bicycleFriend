@@ -3,13 +3,15 @@
 import React, {Component} from "react";
 import { Link } from 'react-router-dom';
 import SingleLayout from "../../components/layouts/single_layout";
-import LoginBox from "../../components/userModules/loginbox";
+import LoginBox from "../../components/memberModules/loginbox";
 
 import "../../common.css";
+
 class Contents extends Component{
     constructor(props){
         super(props)
     }
+    
     // 회원가입.
     handleClickJoin = (e) => {
         e.preventDefault();
@@ -36,15 +38,15 @@ class Contents extends Component{
                 <div className="fixed-login-box">
                     <LoginBox></LoginBox>
                     <div>
-                        <Link to="">회원가입</Link>
-                        <Link to="">비밀번호찾기</Link>
+                        <Link to="/join">회원가입</Link>
+                        <Link to="/userFInd">비밀번호찾기</Link>
                     </div>
                 </div>
             </>
         )
     }
 }
-export default class Index extends Component{ 
+export default class Intro extends Component{ 
     render(){
         return (
             <>

@@ -9,7 +9,6 @@ class SnsLoginService extends Component{
     }
     isSnsAuthLogin = () => {
         const {link} = this.props;
-        alert(link);
     }
 
     render() {
@@ -18,7 +17,7 @@ class SnsLoginService extends Component{
         return (
             <li className={itemClass}>
                 <button onClick={this.isSnsAuthLogin}>
-                    <span class="sp_login kakao">{name}</span>
+                    <span className="sp_login kakao">{name}</span>
                 </button>
             </li>
         )
@@ -31,13 +30,15 @@ export default class LoginBox extends Component {
         const snsServiceList = basicCodes.snsServices;
         return (
             <>
-                <div >
-                    <label className="hide">아이디</label>
-                    <input name="user_name" type="text" placeholder="아이디"></input>
-                    <label className="hide" >비밀번호</label>
-                    <input name="user_pass" type="password" placeholder="비밀번호"></input>
-                    <button type="submit">로그인</button>
-                </div>
+                <form >
+                    <div >
+                        <label className="hide">아이디</label>
+                        <input name="user_name" type="text" placeholder="아이디"></input>
+                        <label className="hide" >비밀번호</label>
+                        <input name="user_pass" type="password" placeholder="비밀번호"></input>
+                        <button type="submit">로그인</button>
+                    </div>
+                </form>
                 <div>
                     <ul className="login_sns_list">
                         {

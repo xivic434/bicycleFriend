@@ -4,13 +4,13 @@ import React, { Component } from "react";
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Redirect
+    Route
 } from "react-router-dom";
 
 import Main from "./main";
 import Intro from "./intro";
-
+import UserFind from "../member/userFind"
+import UserJoin from "../member/userJoin"
 
 export default class MainRoute extends Component {
     render() {
@@ -19,7 +19,9 @@ export default class MainRoute extends Component {
                 <Switch>
                     <Route exact path="/" component={Main}/> 
                     <Route path="/intro" component={Intro} /> 
-                    <Route path="/main" component={Main} /> 
+                    <Route path="/main" component={Main} />
+                    <Route path="/join" component={UserJoin} /> 
+                    <Route path="/userFind" component={UserFind} /> 
                 </Switch>
             </Router>
         )

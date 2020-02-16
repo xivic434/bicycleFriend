@@ -21,34 +21,59 @@ class HeadSection extends Component{
     }
 }
 
-
-
 class MainSection extends Component{
     render(){ 
         return (
             <>
                 <section>
-                    
+                    <ul>
+                        <li><img src="" /></li>
+                        <li><img src="" /></li>
+                        <li><img src="" /></li>
+                    </ul>
                 </section>
-                <div>
-                    <h2>유형별 모임</h2>
-                </div>
-                <div className="">
-                    <p>여행을 함께 떠나고 싶으신가요</p>
-                    <p>일상의 무료함에서</p>
-                    <p>벗어나고 싶으신가요</p>
-                </div>
-                <div className="">
-                    <p>자연 바람을 만끽하며</p>
-                    <p>함께 땀을 흘리고 싶으신가요</p>
-                </div>
-                <div className="">
-                    <p>함께 식사하는</p>
-                    <p>행복함을 찾고 싶으신가요</p>
-                </div>
-                <div className="">
-                    <p>우리가 당신의 부족함을 채워드리겠습니다.</p>
-                </div>
+                <section>
+                    <div>
+                        <h2>유형별 모임</h2>
+                        <div >
+                            <ul >
+                                <li>
+                                    <Link to="/" >
+                                        <img src="" />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" >
+                                        <img src="" />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" >
+                                        <img src="" />
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div className="">
+                        <p>여행을 함께 떠나고 싶으신가요</p>
+                        <p>일상의 무료함에서</p>
+                        <p>벗어나고 싶으신가요</p>
+                    </div>
+                    <div className="">
+                        <p>자연 바람을 만끽하며</p>
+                        <p>함께 땀을 흘리고 싶으신가요</p>
+                    </div>
+                    <div className="">
+                        <p>함께 식사하는</p>
+                        <p>행복함을 찾고 싶으신가요</p>
+                    </div>
+                    <div className="">
+                        <p>우리가 당신의 부족함을 채워드리겠습니다.</p>
+                    </div>
+                </section>
             </>
         )
     }
