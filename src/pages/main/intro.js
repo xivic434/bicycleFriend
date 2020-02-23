@@ -11,15 +11,15 @@ class Contents extends Component{
     constructor(props){
         super(props)
     }
-    
+
     // 회원가입.
     handleClickJoin = (e) => {
         e.preventDefault();
     }
-    // 회원가입.
+
+    // 
     handleClickFindPw = (e) => {
         e.preventDefault();
-
     }
 
     getBgClassName = (theme) =>{
@@ -46,6 +46,7 @@ class Contents extends Component{
         )
     }
 }
+
 export default class Intro extends Component{ 
     render(){
         return (

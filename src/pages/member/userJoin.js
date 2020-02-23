@@ -1,53 +1,34 @@
-import React, {Component} from "react"
-
-class ConfirmUserSign extends Component {
-    constructor(props){
-        super(props);
-    }
-
-    render () {
-        return (
-            <div>Step 1</div>
-        )
-    }
-}
-
-class RegistUserInfo extends Component {
-    constructor(props){
-        super(props);
-    }
-
-    render () { 
-        return (
-            <div>Step 2 </div>
-        )
-    }
-}
-
-class CompleteJoin extends Component {
-    constructor(props){
-        super(props);
-    }
-    render () { 
-        return (
-            <div>Step 3 </div>
-        )
-    }
-}
+import React, {Component} from "react";
+/*
+import JoinStep, {
+    RegistUserInfo,
+    ConfirmUserSign,
+    CompleteJoin
+} from "../../components/memberModules/joinSteps";
+*/
+import JoinStep from "../../components/memberModules/joinSteps";
 
 
 export default class Join extends Component {
     state = {
-        joinStep : 1
+        stepNum : 1
     }
     constructor(props){
         super(props);
     }
     
-    handleNextStep = () => {
+    goSteps = (step = 1 ) => {
         this.setState({
-            joinStep:  this.state.joinStep + 1
+            stepNum: step
         })
+    }
+
+    handleNextStep = (step = 1 ) => {
+        this.goSteps(step);
+    }
+    
+    handlePrevStep = (step = 1) => {
+        this.goSteps(step * -1 );
     }
 
     componentWillUpdate(){
@@ -55,16 +36,29 @@ export default class Join extends Component {
     }
 
     render() {
-        const stepNum = this.state.joinStep;
+        const stepNum = this.state.stepNum;
+        let stepComponent = null ; 
         switch(stepNum){
             case 1 : 
-                return <ConfirmUserSign />
+                stepComponent = <JoinStep.ConfirmUserSign />
             case 2 : 
-                return <RegistUserInfo/>
+                stepComponent = <JoinStep.RegistUserInfo/>
             case 3 : 
-                return <CompleteJoin/>
+                stepComponent = <JoinStep.CompleteJoin/>
             default : 
-                return <ConfirmUserSign/>
+                stepComponent = <JoinStep.ConfirmUserSign/>
         }
+        return (
+            <>
+                <div >
+                    <nav>
+                        <a href="#" onClick={this.goSteps(1)}></a>
+                        <a href="#" onClick={this.goSteps(2)}></a>
+                        <a href="#" onClick={this.goSteps(3)}></a>
+                    </nav>
+                </div>
+                {stepComponent}
+            </>
+        )
     }
 }

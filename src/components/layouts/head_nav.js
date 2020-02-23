@@ -1,6 +1,7 @@
-import React, {Component} from "react"
+import React, {Component} from "react";
+import {Link} from "react-router-dom";
 
-class HeadSection extends Component{
+export default class HeadNav extends Component{
     render(){ 
         return (
             <>
@@ -9,9 +10,9 @@ class HeadSection extends Component{
                 </div>
                 <div >
                     <nav>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                        <Link to=""></Link>
+                        <Link to=""></Link>
+                        <Link to=""></Link>
                     </nav>
                 </div>
             </>
