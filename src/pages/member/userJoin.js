@@ -41,20 +41,30 @@ export default class Join extends Component {
         switch(stepNum){
             case 1 : 
                 stepComponent = <JoinStep.ConfirmUserSign />
+                break;
             case 2 : 
                 stepComponent = <JoinStep.RegistUserInfo/>
+                break;
             case 3 : 
                 stepComponent = <JoinStep.CompleteJoin/>
+                break;
             default : 
                 stepComponent = <JoinStep.ConfirmUserSign/>
+                break;
         }
         return (
             <>
                 <div >
                     <nav>
-                        <a href="#" onClick={this.goSteps(1)}></a>
-                        <a href="#" onClick={this.goSteps(2)}></a>
-                        <a href="#" onClick={this.goSteps(3)}></a>
+                        <a href="#" onClick={this.goSteps(1)}>
+                            1단계
+                        </a>
+                        <a href="#" onClick={this.goSteps(2)}>
+                            2단계
+                        </a>
+                        <a href="#" onClick={this.goSteps(3)}>
+                            3단계
+                        </a>
                     </nav>
                 </div>
                 {stepComponent}

@@ -10,9 +10,9 @@ class MainSection extends Component{
             <>
                 <section>
                     <ul>
-                        <li><img src="" /></li>
-                        <li><img src="" /></li>
-                        <li><img src="" /></li>
+                        <li><img src="#" alt="1번 배너" /></li>
+                        <li><img src="#" alt="2번 배너" /></li>
+                        <li><img src="#" alt="3번 배너" /></li>
                     </ul>
                 </section>
                 <section>
@@ -22,17 +22,20 @@ class MainSection extends Component{
                             <ul >
                                 <li>
                                     <Link to="/" >
-                                        <img src="" />
+                                        <img src="" alt="샤방 라이딩" />
+                                        <p>샤방 라이딩</p>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/" >
-                                        <img src="" />
+                                        <img src="" alt="질주 라이딩" />
+                                        <p>질주 라이딩</p>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/" >
-                                        <img src="" />
+                                        <img src="" alt="묘기 라이딩" />
+                                        <p>묘기 라이딩</p>
                                     </Link>
                                 </li>
                             </ul>

@@ -17,7 +17,7 @@ export default class MainRoute extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/" component={Main}/> 
+                    <Route exact path="/" component={Main} /> 
                     <Route path="/intro" component={Intro} /> 
                     <Route path="/main" component={Main} />
                     <Route path="/join" component={UserJoin} /> 
