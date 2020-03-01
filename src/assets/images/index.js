@@ -3,6 +3,8 @@ import logo from "./logo.png";
 
 
 
-export { logo }
+const mainBanner = [logo,logo,logo]; 
 
 
+
+export { logo  , mainBanner}

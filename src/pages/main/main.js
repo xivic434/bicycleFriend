@@ -4,15 +4,26 @@ import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import TitleBodyLayout from "../../components/layouts/title_body_layout";
 import HeadNav from "../../components/layouts/head_nav";
+import { mainBanner } from "../../assets/images";
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+
+
+
+const slider = (
+    <AwesomeSlider>
+        <div data-src={mainBanner[0]} />
+        <div data-src={mainBanner[1]} />
+        <div data-src={mainBanner[2]} />
+    </AwesomeSlider>
+);
 class MainSection extends Component{
     render(){ 
         return (
             <>
-                <section>
-                    <ul>
-                        <li><img src="#" alt="1번 배너" /></li>
-                        <li><img src="#" alt="2번 배너" /></li>
-                        <li><img src="#" alt="3번 배너" /></li>
+                <section >
+                    <ul className="banner-main">
+                        {slider}
                     </ul>
                 </section>
                 <section>
@@ -46,27 +57,33 @@ class MainSection extends Component{
                     <div className="">
                         <img src= ""></img>
                         <div >
-                            <p>여행을 함께 떠나고 싶으신가요</p>
-                            <p>일상의 무료함에서</p>
-                            <p>벗어나고 싶으신가요</p>
+                            <h2>
+                                여행을 함께 떠나고 싶으신가요<br/>
+                                일상의 무료함에서<br/>
+                                벗어나고 싶으신가요
+                            </h2>
                         </div>
                     </div>
                     <div className="">
                         <img src= ""></img>
                         <div>
-                            <p>자연 바람을 만끽하며</p>
-                            <p>함께 땀을 흘리고 싶으신가요</p>
+                            <h2>
+                                자연 바람을 만끽하며<br/>
+                                함께 땀을 흘리고 싶으신가요
+                            </h2>
                         </div>
                     </div>
                     <div className="">
                         <img src= ""></img>
                         <div>
-                        <p>함께 식사하는</p>
-                        <p>행복함을 찾고 싶으신가요</p>
+                            <h2>
+                                함께 식사하는<br/>
+                                행복함을 찾고 싶으신가요
+                            </h2>
                         </div>
                     </div>
                     <div className="">
-                        <p>우리가 당신의 부족함을 채워드리겠습니다.</p>
+                        <h2>우리가 당신의 부족함을 채워드리겠습니다.</h2>
                     </div>
                 </section>
             </>

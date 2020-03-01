@@ -11,10 +11,10 @@ export default class RegistUserInfo extends Component {
     render () { 
         return (
             <>
-            <div>Step 2 </div>
-            <div> 
-                
-            </div>
+                <div>Step 2 </div>
+                <div> 
+                    
+                </div>
             </>
         )
     }

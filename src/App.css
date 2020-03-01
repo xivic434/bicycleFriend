@@ -44,7 +44,88 @@
 }
 
 
-.hide { 
-  display:none;
+.intro-bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("./assets/images/intro.jpg");
+  min-height: 1024PX;
 }
 
+.fixed-login-box {
+  position: absolute;
+  right: 30%;
+  top: 30%;
+  background: #eee;
+  padding: 10px;
+}
+
+.btn-snslogin {
+  width: 60px;
+  height: 60px;
+  margin: 2px;
+  display: inline-block;
+}
+
+.menubar-main {
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+}
+
+.menubar-main div {
+  display: inline-block;
+}
+
+.menubar-main .logo {
+  width: 30%;
+  margin-top: 10px;
+  float: left;
+}
+
+.menubar-main .logo img {
+  width: 70px;
+  height: 50px;
+}
+
+.menubar-main .searchtext {
+  width: 40%;
+}
+
+.menubar-main .searchtext input {
+  padding: 5px;
+  border: none;
+  border-bottom: solid;
+  border-bottom-color: #f7df15;
+}
+
+.menubar-main .menunav {
+  width: 30%;
+}
+
+.menubar-main nav {
+  width: 70%;
+  display: inline-block;
+  padding: 25px 0;
+}
+
+.menubar-main .menunav a {
+  width: 30%;
+  display: inline-block;
+}
+
+.menubar-main .menunav .menuicon {
+  width: 30%;
+  display: inline-block;
+}
+
+.banner-main { 
+  overflow: hidden;
+}
+
+.banner-main li{ 
+  float:left;
+}
+
+.banner-main li img{ 
+  width:100%
+}

@@ -14,15 +14,16 @@ export default class HeadNav extends Component {
             input:value
         })
     }
+
     render() {
         return (
-            <div className="menubar-main">
+            <div className="menubar-main"> 
                 <div className="logo">
                     <img src={logo} alt="logo"></img>
                 </div>
                 <div className="searchtext">
                     <form>
-                        <input type="text" name="search" value="" onChange={this.handleSearch}></input>
+                        <input type="text" name="search" onChange={this.handleSearch}></input>
                     </form>
                 </div>
                 <div className="menunav">
