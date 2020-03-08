@@ -30,7 +30,7 @@ class MainSection extends Component{
                     <div>
                         <h2>유형별 모임</h2>
                         <div >
-                            <ul >
+                            <ul className="main">
                                 <li>
                                     <Link to="/" >
                                         <img src="" alt="샤방 라이딩" />
@@ -53,10 +53,9 @@ class MainSection extends Component{
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div className="">
-                        <img src= ""></img>
-                        <div >
+                <section className="promotion-main">
+                    <div className="banner banner-1st" >
+                        <div className="title" >
                             <h2>
                                 여행을 함께 떠나고 싶으신가요<br/>
                                 일상의 무료함에서<br/>
@@ -64,26 +63,26 @@ class MainSection extends Component{
                             </h2>
                         </div>
                     </div>
-                    <div className="">
-                        <img src= ""></img>
-                        <div>
+                    <div className="banner banner-2nd" >
+                        <div className="title">
                             <h2>
                                 자연 바람을 만끽하며<br/>
                                 함께 땀을 흘리고 싶으신가요
                             </h2>
                         </div>
                     </div>
-                    <div className="">
-                        <img src= ""></img>
-                        <div>
+                    <div className="banner banner-3rd" >
+                        <div className="title">
                             <h2>
                                 함께 식사하는<br/>
                                 행복함을 찾고 싶으신가요
                             </h2>
                         </div>
                     </div>
-                    <div className="">
-                        <h2>우리가 당신의 부족함을 채워드리겠습니다.</h2>
+                    <div className="banner banner-4th" >
+                        <div className="title">
+                            <h2>우리가 당신의 부족함을 채워드리겠습니다.</h2>
+                        </div>
                     </div>
                 </section>
             </>
