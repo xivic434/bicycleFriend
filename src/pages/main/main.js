@@ -4,14 +4,16 @@ import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import TitleBodyLayout from "../../components/layouts/title_body_layout";
 import HeadNav from "../../components/layouts/head_nav";
-import { mainBanner } from "../../assets/images";
+import RollingImage from "../../components/main/rollingImage";
 import AwesomeSlider from 'react-awesome-slider';
+
+import { mainRolling, mainBanner } from "../../assets/images";
+
 import 'react-awesome-slider/dist/styles.css';
 
 
-
 const slider = (
-    <AwesomeSlider>
+    <AwesomeSlider className="banner-main">
         <div data-src={mainBanner[0]} />
         <div data-src={mainBanner[1]} />
         <div data-src={mainBanner[2]} />
@@ -21,12 +23,15 @@ class MainSection extends Component{
     render(){ 
         return (
             <>
-                <section >
-                    <ul className="banner-main">
+               <section >
+                    <ul >
                         {slider}
                     </ul>
                 </section>
-                <section>
+                <section >
+                        <RollingImage images={mainRolling} /> 
+                </section>
+                <section className="promotion-main">
                     <div>
                         <h2>유형별 모임</h2>
                         <div >
