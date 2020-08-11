@@ -38,7 +38,7 @@ class MainSection extends Component{
                             <ul className="main">
                                 <li>
                                     <Link to="/" >
-                                        <img src="" alt="샤방 라이딩" />
+                                        <img src="" alt="샤방 라이딩2" />
                                         <p>샤방 라이딩</p>
                                     </Link>
                                 </li>
